@@ -1,0 +1,9 @@
+CREATE TABLE `company`.`employees` (
+  `employeeID` INT NOT NULL AUTO_INCREMENT,
+  `employeeName` VARCHAR(45) NOT NULL,
+  `employeeEmail` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`employeeID`),
+  UNIQUE INDEX `idemployee_UNIQUE` (`employeeID` ASC) VISIBLE,
+  UNIQUE INDEX `employeeName_UNIQUE` (`employeeName` ASC) VISIBLE,
+  UNIQUE INDEX `employeeEmail_UNIQUE` (`employeeEmail` ASC) VISIBLE)
+COMMENT = 'employee details table';
